@@ -1,0 +1,7 @@
+services:
+   account:
+   catalog:
+   order:
+   accountDB:
+   catalogDB:
+   orderDB:

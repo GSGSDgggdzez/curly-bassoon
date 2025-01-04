@@ -1,0 +1,49 @@
+schema: schema.graphql
+
+# Models configuration
+models:
+  Account:
+    model: github.com/GSGSDgggdzez/go-grpc-graphql/Graphql/models.Account
+    fields:
+      orders:
+        resolver: true
+  #     id:
+  #       resolver: false  # ID field is handled by the model
+  #     name:
+  #       resolver: false
+  #     email:
+  #       resolver: false
+  #     createdAt:
+  #       resolver: false
+
+  # Order:
+  #   model: github.com/GSGSDgggdzez/go-grpc-graphql/graph/model.Order
+  #   fields:
+  #     id:
+  #       resolver: false
+  #     amount:
+  #       resolver: false
+  #     status:
+  #       resolver: false
+  #     accountId:
+  #       resolver: false
+
+# Resolver configuration
+# resolver:
+#   layout: follow-schema
+#   dir: graph
+#   package: graph
+#   filename_template: "{name}.resolvers.go"
+
+# Auto binding configuration
+# autobind:
+#   - "github.com/GSGSDgggdzez/go-grpc-graphql/graph/model"
+
+# # Optional: Enable generation of federation directives
+# federation:
+#   filename: federation.go
+#   package: graph
+  
+# Optional: Configure output directory
+# output:
+#   filename: graph/generated/generated.go
